@@ -1,1 +1,6 @@
+# Llista de llibreries Python
+# Exemple pandas==1.3.0 si es vol fixzar una versió
+# pandas>=1.0.0 si es vol una versió igual o superior a 1.0.0
+# pandas<=2.0.0 si es vol una versió igual o inferior a 2.0.0
+# pandas si es vol la última versió
 plotly
