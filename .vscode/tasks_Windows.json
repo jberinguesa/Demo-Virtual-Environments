@@ -1,0 +1,53 @@
+//Versió per Windows no provada
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Create venv",
+            "type": "shell",
+            "command": "py -3.11 -m venv env311",
+            "presentation": {
+                "reveal": "always"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Activate venv",
+            "type": "shell",
+            "command": "env311\\Scripts\\activate",
+            "dependsOn": "Create venv",
+            "presentation": {
+                "reveal": "always"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Activate venv",
+            "type": "shell",
+            "command": "pip install --upgrade pip",
+            "dependsOn": "Create venv",
+            "presentation": {
+                "reveal": "always"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Activate venv",
+            "type": "shell",
+            "command": "pip install -r .vscode\\requirements.txt",
+            "dependsOn": "Create venv",
+            "presentation": {
+                "reveal": "always"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
